@@ -1,24 +1,2 @@
 #!/bin/bash
-
-# Vérifier si le fichier C est spécifié
-if [ -z "$CFILE" ]; then
-    echo "Erreur : La variable CFILE n'est pas définie."
-    exit 1
-fi
-
-# Vérifier si le fichier C existe
-if [ ! -f "$CFILE" ]; then
-    echo "Erreur : Le fichier $CFILE n'existe pas."
-    exit 1
-fi
-
-# Exécuter le préprocesseur sur le fichier C et sauvegarder le résultat dans le fichier 'c'
 gcc -E "$CFILE" -o c
-
-# Vérifier si le prétraitement a réussi
-if [ $? -eq 0 ]; then
-    echo "Le prétraitement a réussi. Le résultat est sauvegardé dans 'c'."
-else
-    echo "Erreur lors de l'exécution du préprocesseur."
-    exit 1
-fi
