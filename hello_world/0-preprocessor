@@ -22,4 +22,3 @@ else
     echo "Erreur lors de l'exécution du préprocesseur."
     exit 1
 fi
-
