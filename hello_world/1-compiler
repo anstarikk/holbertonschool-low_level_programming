@@ -1,3 +1,2 @@
-export CFILE=main.c   # Set the C file variable
-./1-compiler          # Compile without linking
-
+#!/bin/bash
+gcc -c "$CFILE" -o "${CFILE%.c}.o"
