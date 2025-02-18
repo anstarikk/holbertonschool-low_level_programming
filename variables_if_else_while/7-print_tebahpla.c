@@ -3,8 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: Prints the lowercase alphabet in reverse, followed by a new line,
- * using only putchar twice.
+ * Description: Prints the lowercase alphabet in reverse, followed by a new
+ * line, using only putchar twice.
  *
  * Return: Always 0 (Success)
  */
