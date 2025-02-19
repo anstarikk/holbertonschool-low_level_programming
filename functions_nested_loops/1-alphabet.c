@@ -1,13 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
-/**
- * main - Prints "_putchar" followed by a new line
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+void print_alphabet(void)
 {
-    printf("_putchar\n");
-    return (0);
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
+	_putchar('\n');
 }
-
