@@ -1,20 +1,8 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - Affiche "_putchar" suivi d'une nouvelle ligne
- * Return: 0 (Succès)
- */
-int main(void)
-{
-    char *str = "_putchar";
-    int i;
+int _putchar(char c);
 
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        _putchar(str[i]);
-    }
-    _putchar('\n');
+#endif /* MAIN_H */
 
-    return (0);
-}
 
