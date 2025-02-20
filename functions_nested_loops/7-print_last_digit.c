@@ -14,8 +14,10 @@ int print_last_digit(int n)
 	{
 		n = -n;
 	}
+
 	last_digit = n % 10;
-	_putchar(last_digit + '0');
+
+	_putchar(last_digit + '0'); /* Convertir en caractère et l'afficher */
+
 	return (last_digit);
 }
-
