@@ -8,19 +8,15 @@
  */
 int print_last_digit(int n)
 {
-    int last_digit;
+	int last_digit;
 
-    /* Si n est négatif, le rendre positif */
-    if (n < 0)
-    {
-        n = -n;
-    }
+	if (n < 0)
+	{
+		n = -n;
+	}
 
-    /* Récupérer le dernier chiffre */
-    last_digit = n % 10;
+	last_digit = n % 10;
+	_putchar(last_digit + '0');
 
-    /* Afficher le dernier chiffre */
-    _putchar(last_digit + '0');  /* Convertir en caractère et l'afficher */
-
-    return (last_digit);
+	return (last_digit);
 }
