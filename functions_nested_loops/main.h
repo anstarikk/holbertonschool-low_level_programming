@@ -1,25 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Entry point, tests print_last_digit function
+ * print_last_digit - Prints the last digit of a number
+ * @n: The number to extract the last digit from
  *
- * Return: Always 0
+ * Return: The value of the last digit
  */
-int main(void)
+int print_last_digit(int n)
 {
-	int n1 = 123;
-	int n2 = -456;
-	int n3 = 0;
+    int last_digit;
 
-	printf("Last digit of %d: ", n1);
-	print_last_digit(n1);  /* Devrait afficher 3 */
+    /* Si n est négatif, le rendre positif */
+    if (n < 0)
+    {
+        n = -n;
+    }
 
-	printf("\nLast digit of %d: ", n2);
-	print_last_digit(n2);  /* Devrait afficher 6 */
+    /* Récupérer le dernier chiffre */
+    last_digit = n % 10;
 
-	printf("\nLast digit of %d: ", n3);
-	print_last_digit(n3);  /* Devrait afficher 0 */
+    /* Afficher le dernier chiffre */
+    _putchar(last_digit + '0');  /* Convertir en caractère et l'afficher */
 
-	return (0);
+    return (last_digit);
 }
