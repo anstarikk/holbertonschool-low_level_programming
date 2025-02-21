@@ -1,16 +1,8 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * print_alphabet - Prints the alphabet in lowercase followed by a new line.
- */
-void print_alphabet(void)
-{
-	char c;
+/* Déclarations des prototypes et autres déclarations ici */
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-	_putchar('\n');
-}
+void print_to_98(int n);
 
+#endif /* MAIN_H */
