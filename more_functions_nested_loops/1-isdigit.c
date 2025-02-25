@@ -1,9 +1,9 @@
-#include <stdio.h>
-#include "main.h"  // Assurez-vous d'inclure main.h pour déclarer _isdigit
+#include "main.h"
 
-int main(void)
+int _isdigit(int c)
 {
-    char c = '5';
-    printf("%c: %d\n", c, _isdigit(c));  // Appel à la fonction _isdigit
-    return 0;
+  if (c >= '0' && c <= '9')
+    return (1);
+  return (0);
 }
+
