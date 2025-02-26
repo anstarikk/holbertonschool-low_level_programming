@@ -1,8 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-void print_numbers(void);
-int _putchar(char c);
-
-#endif /* MAIN_H */
-
+int main(void)
+{
+	print_numbers();
+	return (0);
+}
