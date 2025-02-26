@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * main - Entry point, calls print_numbers
+ * print number - print the number 0 to 9 
  *
- * Return: Always 0 (Success)
  */
-int main(void)
+void print_numbers(void)
 {
-	print_numbers();
-	return (0);
+	int x ='0';
+	while(x<='9')
+	_putchar(x++);
+
+        _putchar('\n');
 }
 
