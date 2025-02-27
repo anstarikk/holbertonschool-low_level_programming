@@ -1,7 +1,8 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-int main(void)
-{
-	print_numbers();
-	return (0);
-}
+/* Function prototype */
+void print_numbers(void);
+
+#endif /* MAIN_H */
+
