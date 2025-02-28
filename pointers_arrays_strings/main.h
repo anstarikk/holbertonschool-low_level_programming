@@ -1,8 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Prototype for the reset_to_98 function */
-void reset_to_98(int *n);
-void reset_to_98(int *n);
+/* Prototype for the swap_int function */
+void swap_int(int *a, int *b);
+
 #endif /* MAIN_H */
 
