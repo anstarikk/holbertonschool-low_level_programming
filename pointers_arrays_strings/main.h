@@ -1,7 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Prototype for the _puts function */
-void _puts(char *str);
-void _puts(char *str);
+/* Prototype de la fonction _strlen */
+int _strlen(char *s);
+
 #endif /* MAIN_H */
+
