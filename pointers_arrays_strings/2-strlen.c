@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: pointer to the string
+ * _strlen - retourne la longueur d'une chaîne
+ * @s: chaîne de caractères
  *
- * Return: length of the string
+ * Return: longueur de la chaîne
  */
 int _strlen(char *s)
 {
@@ -14,16 +14,5 @@ int _strlen(char *s)
 		length++;
 
 	return (length);
-}
-
-int main(void)
-{
-	char str[] = "Hello, world!";
-
-	int length = _strlen(str);
-
-	printf("The length of the string is: %d\n", length);
-
-	return (0);
 }
 
