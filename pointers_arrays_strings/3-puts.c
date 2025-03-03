@@ -1,12 +1,17 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - Writes a character to stdout
- * @c: The character to print
+ * _puts - Prints a string followed by a new line to stdout
+ * @str: The string to print
  *
- * Return: On success 1, on error -1.
+ * Return: void
  */
-int _putchar(char c)
+void _puts(char *str)
 {
-	return (write(1, &c, 1));
+	while (*str)
+	{
+		_putchar(*str); /* Utilise _putchar au lieu de putchar */
+		str++;
+	}
+	_putchar('\n');
 }
