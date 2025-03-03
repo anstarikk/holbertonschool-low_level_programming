@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * puts2 - imprime chaque caractère sur deux dans une chaîne,
- *         en commençant par le premier
- * @str: la chaîne de caractères à imprimer
+ * puts2 - Prints every other character of a string, starting with the first.
+ * @str: The string to be printed.
  */
 void puts2(char *str)
 {
 	int i;
 
-	/* Parcours de la chaîne et impression de chaque deuxième caractère */
+	/* Loop through the string and print every other character */
 	for (i = 0; str[i] != '\0'; i += 2)
 	{
-		_putchar(str[i]);  /* Imprime le caractère */
+		_putchar(str[i]);  /* Print the current character */
 	}
 
-	_putchar('\n'); /* Assure un saut de ligne après l'impression */
+	_putchar('\n'); /* Print a new line after printing the string */
 }
