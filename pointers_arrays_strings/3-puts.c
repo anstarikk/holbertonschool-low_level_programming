@@ -1,12 +1,12 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * _puts - imprime une chaîne de caractères suivie d'une nouvelle ligne
- * @str: chaîne de caractères à imprimer
+ * _putchar - Writes a character to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1, on error -1.
  */
-void _puts(char *str)
+int _putchar(char c)
 {
-	while (*str)  /* Tant que le caractère actuel n'est pas '\0' */
-	{
-		putchar(*str);  /* Affiche le caractère courant */
-		str++;          /* Passe au caractère suiva
+	return (write(1, &c, 1));
+}
